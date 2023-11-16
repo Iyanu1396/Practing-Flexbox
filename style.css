@@ -30,7 +30,7 @@ img {
 .intro {
   background-color: #3b4050;
   color: #ffffff;
-  padding: 3em 0;
+  padding: 5em  0 8em 0;
 }
 
 .intro-heading {
@@ -64,7 +64,7 @@ span {
 
 .sec_1 {
   background-color: rgb(245, 245, 241);
-  padding: 3em 0;
+  padding: 5em 0;
   text-align: center;
 }
 
@@ -97,7 +97,7 @@ span {
 }
 
 .sec_2 .column {
-  padding: 1.5em 1em;
+  padding: 2em 2.5em;
   margin-bottom: 1.5em;
   margin-top: 3em;
   text-align: center;
@@ -128,10 +128,81 @@ span {
   .column {
     width: 100%;
   }
-  .sec_2 img{
+
+  .sec_1 .column + .column {
+    margin-left: 3em;
+  }
+  .sec_2 img {
     margin: 2.5em 0;
   }
-  .sec_2 .column +  .column{
+  .sec_2 .column + .column {
     margin-left: 1em;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 5.6rem;
+    line-height: 1;
+    min-width: 500px;
+  }
+  .intro p,
+  a {
+    font-size: 1.5rem;
+  }
+  .sec_1 h2{
+    font-size: 1.8rem;
+  }
+  .sec_1 p{
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .sec_2 h2{
+    font-size: 2.2rem;
+  }
+  .sec_2 p{
+    font-size: 1.3rem;
+  }
+  .sec_2 .column h2{
+    font-size: 1.8rem;
+  }
+  .sec_2 .column p{
+    font-size: 1.1rem;
+  }
+
+  .sec_2 .container{
+    display: flex;
+    gap: 5em;
+  }
+  .sec_2 .flex{
+    flex-direction: column;
+  }
+  .sec_2 .column + .column {
+    margin-left: 0;
+}
+.sec_3 h2{
+  font-size: 3.5rem;
+}
+.sec_3 h3{
+  font-size: 1.3rem;
+}
+.sec_3 p{
+  line-height: 1.5;
+}
+.sec_3 .container{
+  display: flex;
+  justify-content: center;
+}
+.sec_3 .column{
+  margin-right: 8em;
+}
+  .intro .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .end {
+    margin-top: auto;
   }
 }
